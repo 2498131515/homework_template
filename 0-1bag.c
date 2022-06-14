@@ -30,8 +30,7 @@ void KnapsackDP(int *w,int *v,int c,int n){
             }
         }
     }
-    printf("结果为：%d\n",res[n-1][c-1]);
-    system("Pause");
+    printf("结果为：%d\n",res[n][c]);
 }
 int main(){
     int n,c;
