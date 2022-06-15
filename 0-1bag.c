@@ -35,9 +35,8 @@ void KnapsackDP(int *w,int *v,int c,int n){
 int main(){
     int n,c;
     int *w,*v;
-    printf("请输入物品数量及背包容量:\n");
-    scanf("%d %d",&n,&c);
-    Random(&w,&v,n);
+    n=100;
+    c=20000;
     printf("随机生成的w，v数组：\n");
     for(int i=0;i<n;i++){
         printf("%d %d\n",w[i],v[i]);
