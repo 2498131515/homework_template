@@ -18,7 +18,6 @@ void Random(th *g,int n){
          }
         (*g)[i].v=rand()%100;
         (*g)[i].rela=1.0*(*g)[i].v/(*g)[i].w;
-        printf("%d  %d %lf\n",(*g)[i].w,(*g)[i].v,(*g)[i].rela);
     }
     printf("\n\n");
 }
@@ -90,8 +89,8 @@ void KnaspackGreedy(th g,int n,float *x,int c){
 }
 int main(){
     int n,c;
-    n=20;
-    c=200;
+    n=10;
+    c=4000;
     th g=NULL;
     float x[n];
     for(int i=0;i<n;i++){
